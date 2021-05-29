@@ -1,15 +1,11 @@
 import React from "react";
 import "./App.css";
+import AppBarGhost from "./components/AppBar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          hello.
-        </p>
-        Learn React
-      </header>
+    <div className="App-header">
+      <AppBarGhost />
     </div>
   );
 }
