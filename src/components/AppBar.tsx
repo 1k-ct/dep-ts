@@ -74,17 +74,17 @@ function AppBarGhost() {
           aria-label="scrollable force tabs example"
         >
           <Tab
-            label="Ghost One"
+            label="Blissful Ghost"
             icon={<Ghost size={40} mood="blissful" color="#A6E191" />}
             {...a11yProps(0)}
           />
           <Tab
-            label="Ghost Two"
+            label="Happy Ghost"
             icon={<Ghost size={40} mood="happy" color="	#83D1FB" />}
             {...a11yProps(1)}
           />
           <Tab
-            label="Ghost Three"
+            label="Shocked Ghost"
             icon={<Ghost size={40} mood="shocked" color="#E0E4E8" />}
             {...a11yProps(2)}
           />
