@@ -9,6 +9,7 @@ import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 
+import CopyrightIcon from "@material-ui/icons/Copyright";
 interface TabPanelProps {
   children?: React.ReactNode;
   index: any;
@@ -61,6 +62,7 @@ function AppBarGhost() {
   const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
     setValue(newValue);
   };
+
   return (
     <div className={classes.root}>
       <AppBar position="static" color="transparent">
@@ -95,7 +97,7 @@ function AppBarGhost() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          height: "100vh",
+          height: "90vh",
         }}
       >
         <TabPanel value={value} index={0}>
@@ -110,6 +112,26 @@ function AppBarGhost() {
           <SpeechBubble size={height / 5} mood="shocked" color="#E0E4E8" />
           <Ghost size={height / 5} mood="shocked" color="#E0E4E8" />
         </TabPanel>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          position: "absolute",
+          left: 0,
+          bottom: 0,
+          right: 0,
+        }}
+      >
+        <CopyrightIcon fontSize="small" />
+        <div
+          style={{
+            fontSize: "1vh",
+          }}
+        >
+          Copyright eatmoreice.com
+        </div>
       </div>
     </div>
   );
