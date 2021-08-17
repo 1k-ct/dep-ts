@@ -107,10 +107,10 @@ function App() {
           <div>
             <a
               href={
-                "http://api.eatmoreice.com/v1/vtubers/" + affiliation + type
+                "https://api.eatmoreice.com/v1/vtubers/" + affiliation + type
               }
             >
-              {"http://api.eatmoreice.com/v1/vtubers/" + affiliation + type}
+              {"https://api.eatmoreice.com/v1/vtubers/" + affiliation + type}
             </a>
           </div>
           <div>
